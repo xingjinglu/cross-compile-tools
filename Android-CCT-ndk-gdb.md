@@ -71,3 +71,7 @@ continue
 - host和device的gdb，gdbserver版本一致  
 - sysroot路径要加入到环境变量     
 - 配置工具链主要选择C++版本，libc++只支持llvm   
+- host gdb未针对arm配置导致的错误，需要重新编译gdb  
+```bash   
+Reply contains invalid hex digit 59
+```

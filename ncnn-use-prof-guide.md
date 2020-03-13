@@ -7,7 +7,7 @@
   Make sure the version android-ndk is r15c.
 
   ```
-  $cmake -DCMAKE_TOOLCHAIN_FILE=/search/speech/luxingjing/software/android-ndk-r15c/build/cmake/android.toolchain.cmake  -DANDROID_ABI="arm64-v8a" -DANDROID_ARM_NEON=ON     -DANDROID_PLATFORM=android-14 ..
+  $cmake -DCMAKE_TOOLCHAIN_FILE=~/luxingjing/software/android-ndk-r15c/build/cmake/android.toolchain.cmake  -DANDROID_ABI="arm64-v8a" -DANDROID_ARM_NEON=ON     -DANDROID_PLATFORM=android-14 ..
 
   $make
 
@@ -17,7 +17,7 @@
 
 - build tools
 
-  - protobuf：版本太新不行，例如3.1.1,目前测试可以的版本的是2.6.1
+  - protobuf：目前测试可以的版本的是2.6.1
 
   - 需要修改tools/caffe/CMakeLists.txt 和/tools/onnx/CMakeLists.txt文件，添加对应的protobuf路径   
 
